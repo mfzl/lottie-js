@@ -61,7 +61,9 @@ test('Get text layer', async () => {
 test('Must have expected number of colors', async () => {
   const color1 = await Animation.fromURL('https://assets9.lottiefiles.com/packages/lf20_ecmsvaa7.json');
   const color2 = await Animation.fromURL('https://assets3.lottiefiles.com/packages/lf20_pmxrarjp.json');
+  const color3 = await Animation.fromURL('https://assets8.lottiefiles.com/packages/lf20_cXlJba.json');
 
   expect(color1.colors.length).toEqual(1);
   expect(color2.colors.length).toEqual(1);
+  expect(color3.colors.length).toEqual(3);
 });
